@@ -1,0 +1,31 @@
+Order ID,Customer Name,Email,Order Date,Amount,Quantity,Region,Notes
+1001,  John Smith,john.smith@email.com,2024-01-15,249.99,2,North,
+1002,Jane Doe,jane.doe@email.com,01/16/2024,89.50,1,south,Gift wrap requested
+1003,MARY JOHNSON,mary.j@email.com,16-Jan-2024,,3,North ,
+1004,Bob Williams,,2024-01-17,150.00,five,East,Called twice
+1005,alice brown,alice.brown@email.com,2024/01/18,75.25,2,WEST,
+1006,  John Smith,john.smith@email.com,2024-01-15,249.99,2,North,
+1007,Chris Evans,chris.e@email.com,01-19-2024,320.00,4,South,
+1008,Nina Patel,nina.patel@email.com,2024-01-20,-45.00,1,East,Refund issued
+1009,Tom Lee,tom.lee@email.com,2024-01-21,999999.00,1,North,Data entry error?
+1010,Sara Kim,sara.kim@email.com,,110.00,2,south,
+1011,Mike Chen,mike.chen@email.com,2024-01-22,64.75,N/A,West,
+1012,Laura Green,laura.green@email.com,2024-01-23,,2,East,Missing amount
+1013,  DAVID CLARK  ,david.clark@email.com,2024-01-24,215.00,3,north,
+1014,Emma Wilson,emma.wilson@email.com,24-Jan-2024,58.00,1,South,
+1015,James Taylor,james.taylor@email.com,2024-01-25,190.50,-2,East,Negative qty typo
+1016,Olivia Moore,olivia.moore@email.com,2024/01/26,132.00,2,west,
+1017,Chris Evans,chris.e@email.com,01-19-2024,320.00,4,South,
+1018,Ethan White,,2024-01-27,410.00,3,North,No email on file
+1019,Sophia Lewis,sophia.lewis@email.com,2024-01-28,,1,East,
+1020,Noah Walker,noah.walker@email.com,2024-01-29,88.20,2,South ,
+1021,Ava Hall,ava.hall@email.com,not a date,95.00,1,North,Bad date entry
+1022,Liam Young,liam.young@email.com,2024-01-30,3200.00,10,west,Bulk order
+1023,  Mia King,mia.king@email.com,2024-01-31,45.60,1,East,
+1024,Lucas Wright,lucas.wright@email.com,02/01/2024,72.00,2,South,
+1025,Grace Scott,grace.scott@email.com,2024-02-02,,3,North,Amount pending
+1026,Henry Green,henry.green@email.com,2024-02-03,63.40,1,east,
+1027,Zoe Adams,zoe.adams@email.com,2024-02-04,128.00,2,West,
+1028,Nina Patel,nina.patel@email.com,2024-01-20,-45.00,1,East,Refund issued
+1029,Owen Baker,owen.baker@email.com,2024-02-05,54.99,1,South,
+1030,Ella Nelson,ella.nelson@email.com,2024-02-06,210.00,four,North,Qty typo

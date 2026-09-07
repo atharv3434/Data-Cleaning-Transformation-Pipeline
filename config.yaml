@@ -1,0 +1,54 @@
+# Configuration for the data cleaning & transformation pipeline.
+# Adjust these settings to point at your own dataset and cleaning rules.
+
+input_path: data/raw/messy_sales_data.csv
+output_path: data/processed/cleaned_sales_data.csv
+report_path: data/processed/cleaning_report.json
+
+# Columns expected to be free text (whitespace stripped, casing standardized)
+text_columns:
+  - customer_name
+  - region
+
+# Column-specific text casing: "title" | "upper" | "lower"
+text_case:
+  customer_name: title
+  region: title
+
+# Columns that should be parsed as dates (multiple input formats are handled automatically)
+date_columns:
+  - order_date
+
+# Columns that should be coerced to numeric (non-numeric values become missing)
+numeric_columns:
+  - amount
+  - quantity
+
+# How to handle missing values, per column.
+# Options: "drop_row" | a literal fill value | "median" | "mean"
+missing_value_strategy:
+  amount: median
+  quantity: median
+  region: "Unknown"
+  email: "Unknown"
+  order_date: drop_row
+
+# Columns used to identify duplicate rows. Deliberately excludes order_id:
+# in this dataset, the same sale sometimes got re-entered under a new order
+# ID, so matching on the "who/when/how much" fields (not the ID) is what
+# actually catches those duplicates.
+duplicate_subset:
+  - customer_name
+  - order_date
+  - amount
+
+# Outlier handling (applied after numeric coercion), using the IQR method.
+outlier_columns:
+  - amount
+outlier_method: iqr        # currently only "iqr" is implemented
+iqr_multiplier: 1.5
+outlier_action: cap        # "cap" (clip to bounds) or "remove" (drop rows)
+
+# Quantity must be a positive integer; anything else is treated as missing
+# before the missing-value strategy above is applied.
+quantity_min: 1
