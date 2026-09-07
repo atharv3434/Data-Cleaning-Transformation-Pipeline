@@ -1,6 +1,7 @@
 # Configuration for the data cleaning & transformation pipeline.
 # Adjust these settings to point at your own dataset and cleaning rules.
 
+
 input_path: data/raw/messy_sales_data.csv
 output_path: data/processed/cleaned_sales_data.csv
 report_path: data/processed/cleaning_report.json
