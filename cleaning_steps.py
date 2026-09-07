@@ -4,6 +4,7 @@ Each function takes a DataFrame (and sometimes a shared `report` dict to
 record what it changed) and returns the transformed DataFrame. Keeping each
 step small and single-purpose makes the pipeline easy to reorder, test, or
 extend with new steps.
+
 """
 
 import numpy as np
